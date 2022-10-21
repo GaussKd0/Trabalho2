@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+:root{
+    --color1:#141726;
+    --color2:#2F3940;
+    --color3:#592C34;
+    --color4:#222640;
+    --color5:#4A678C;
+    --color6:#8EACBF;
+    --color7:#77ffc0;
+    --color8:#2f2841;
+    --color9:#1E232E;
+    --color10:#010221;
+    --color11:#514869;
+    --corlor12:#252336;
+    --corlor13:#101938;
+    --color14:#2b1055;
+    --color15:#7597de;
+    --color16:#fff;
+    --color17:#1c0522;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232427;
+}
+header{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 30px 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo{
+    color: var(--color16);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: var(--color16);
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.ativar
+{
+   background: var(--color16);
+   color: var(--color14);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 100px 0 50px;
+
+}
+.container .card{
+    position: relative;
+    min-width: 320px;
+    height: 500px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255,255,255,0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255,255,255,0.1);
+    border-radius: 15px;
+    margin: 30px;
+}
+.container .card .caixa{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border-radius: 15px;
+    boder: 2px solid #1e1f23;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:  transform 0.4s, box-shadow 0.4s;
+
+}
+.container .card:hover .caixa{
+      transform: translateY(-50px);
+      box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+
+.container .card .caixa .conteudo{
+    padding: 20px;
+    text-align: center;
+}
+.container .card .caixa .icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #f00;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.container .card .caixa .icon .fa{
+    color: #fff;
+    font-size: 2em;
+}
+.container .card .caixa .conteudo h3{
+    font: siz 1.8em;
+    color: #fff;
+    font-weight: 300;
+}
+.container .card .caixa .conteudo h4{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+}
+.container .card .caixa .conteudo h4 sup{
+    font-size: 0.75em;
+    font-weight: 300;
+}
+.container .card .caixa .conteudo ul{
+    position: relative;
+}
+.container .card .caixa .conteudo ul li{
+    list-style: none;
+    color: #fff;
+    margin: 5px 0;
+}
+.container .card .caixa .conteudo ul li img{
+    width: 25px;
+    padding: 2px;
+    color: #0f0;
+}
+.container .card .caixa .conteudo ul li .fa-check{
+   color: #0f0;
+}
+.container .card .caixa .conteudo ul li .fa-times{
+    color: #f00;
+ }
+ .container .card .caixa .conteudo a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background:#f00;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+ }
+ .container .card:nth-child(1) .caixa .conteudo a,
+ .container .card:nth-child(1) .caixa .conteudo .icon
+ {
+    background: #2196f3;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+ .container .card:nth-child(2) .caixa .conteudo a,
+ .container .card:nth-child(2) .caixa .conteudo .icon
+ {
+    background: #e91e63;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+ .container .card:nth-child(3) .caixa .conteudo a,
+ .container .card:nth-child(3) .caixa .conteudo .icon
+ {
+    background: #97dc47;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+
+
+
+
+
